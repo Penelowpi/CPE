@@ -42,12 +42,12 @@ while True:
     print("Check if an item exists in the dictionary")
     item = input("Enter item you want to check: ")
 
-    item_exist = check_if_item_exist(item) is True
-    item_dont_exist = check_if_item_exist(item) is False
+    item_exist = check_if_item_exist(item)
 
     if item_exist:
         print_item(item)
-    elif item_dont_exist:
+
+    else:
         print("\nAdd a new item to the dictionary")
 
         item = input("Enter new item you want to add: ")
